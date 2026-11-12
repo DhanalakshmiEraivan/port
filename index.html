@@ -4888,7 +4888,18 @@ html,body{max-width:100%;overflow-x:clip!important}
 <main>
 <section class="hero" id="top">
 <div class="hero-media">
-<video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="none" poster="assets/hero-poster.svg">
+<video
+    class="hero-video"
+    id="heroVideo"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    poster="assets/hero-poster.svg"
+>
+    <source src="./videos/hero.mp4" type="video/mp4">
+</video>
 <source src="videos/hero.mp4" type="video/mp4">
 </video>
 <img class="hero-poster" id="heroPoster" hidden src="assets/hero-poster.svg" alt="Abstract architectural technology backdrop">
