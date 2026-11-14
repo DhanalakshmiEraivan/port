@@ -4825,6 +4825,39 @@ html,body{max-width:100%;overflow-x:clip!important}
 @media(prefers-reduced-motion:reduce){.hero-rotate{animation:none!important}.svc-card:after,.case-card:after,.ins-card:after{animation:none!important}}
 </style>
 
+<style id="quadrafroyn-signature-motion">
+/* QUADRAFROYN — signature motion layer */
+:root{--motion-ease:cubic-bezier(.16,1,.3,1);--qf-glow:rgba(0,127,236,.28)}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{overflow-x:hidden}
+.hero{isolation:isolate}.hero:before{content:"";position:absolute;z-index:1;inset:0;pointer-events:none;background:radial-gradient(circle at 78% 24%,rgba(0,127,236,.22),transparent 28%),linear-gradient(115deg,rgba(3,10,28,.16),transparent 48%)}
+.hero-content{perspective:1000px}.hero-tag{animation:tagDrift 5s ease-in-out infinite}.hero-tag-dot{box-shadow:0 0 0 0 rgba(74,190,255,.6);animation:dotPing 2.2s infinite}.hero-title .line{overflow:visible}.hero-title .line-inner{display:inline-block;animation:heroLineIn 1.05s var(--motion-ease) both}.hero-title .line:nth-child(2) .line-inner{animation-delay:.13s}.hero-title .line:nth-child(3) .line-inner{animation-delay:.26s}.hero-rotate{display:inline-block;transform-origin:50% 80%;text-shadow:0 0 30px rgba(50,156,255,.24)}.hero-rotate.word-enter{animation:wordFlip .7s var(--motion-ease) both}.hero-sub{animation:riseIn 1s .35s both}.hero-actions .btn{position:relative;overflow:hidden;isolation:isolate}.hero-actions .btn:after{content:"";position:absolute;inset:-40% auto -40% -45%;width:35%;transform:skewX(-22deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);transition:left .8s var(--motion-ease);z-index:-1}.hero-actions .btn:hover:after{left:125%}.hero-scroll{animation:scrollBob 2.4s ease-in-out infinite}.hero-meta{animation:riseIn 1s .55s both}
+/* animated ambient shapes */
+.qf-orbit{position:absolute;z-index:2;pointer-events:none;border:1px solid rgba(120,190,255,.23);border-radius:50%;width:clamp(110px,17vw,240px);aspect-ratio:1;right:8%;top:18%;animation:orbitSpin 22s linear infinite}.qf-orbit:before,.qf-orbit:after{content:"";position:absolute;border:1px solid rgba(120,190,255,.18);border-radius:50%;inset:14%}.qf-orbit:after{inset:31%;background:radial-gradient(circle,rgba(0,127,236,.2),transparent 70%);box-shadow:0 0 55px rgba(0,127,236,.18)}.qf-orbit i{position:absolute;width:9px;height:9px;border-radius:50%;background:#8dd7ff;box-shadow:0 0 18px #51baff;left:13%;top:23%}
+.trusted{position:relative;overflow:hidden}.marquee-track{will-change:transform}.marquee-item{transition:color .3s,transform .3s}.marquee-item:hover{color:var(--azure);transform:translateY(-4px)}
+/* Service cards receive their own photographic identity */
+.svc-card{position:relative;isolation:isolate;overflow:hidden;transform-style:preserve-3d;transition:transform .55s var(--motion-ease),box-shadow .55s,border-color .4s!important}.svc-card:before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(145deg,rgba(0,127,236,.095),transparent 52%);opacity:.55;transition:opacity .4s}.svc-card:after{content:"";position:absolute;z-index:-1;width:190px;height:190px;right:-90px;bottom:-110px;border:1px solid rgba(0,127,236,.18);border-radius:50%;box-shadow:0 0 0 18px rgba(0,127,236,.025),0 0 0 38px rgba(0,127,236,.02);transition:transform .8s var(--motion-ease)}.svc-card:hover{box-shadow:0 24px 60px rgba(0,40,100,.13)!important;border-color:rgba(0,127,236,.4)!important}.svc-card:hover:before{opacity:1}.svc-card:hover:after{transform:scale(1.45) rotate(28deg)}.svc-card .svc-icon{display:grid;place-items:center;transition:transform .65s var(--motion-ease),background .4s;transform-origin:center}.svc-card:hover .svc-icon{transform:translateY(-7px) rotate(12deg) scale(1.12)}.svc-visual{height:116px;margin:18px 0 20px;border-radius:13px;overflow:hidden;position:relative;background:#0b1e38}.svc-visual img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1s var(--motion-ease),filter .6s}.svc-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,15,34,.48),rgba(5,15,34,.02)),linear-gradient(0deg,rgba(5,15,34,.28),transparent)}.svc-card:hover .svc-visual img{transform:scale(1.12);filter:saturate(1.18)}.svc-card h3{transition:transform .45s var(--motion-ease)}.svc-card:hover h3{transform:translateX(5px)}
+/* Case study and editorial image motion */
+.case-card,.ins-card,.qfp-card,.qfm-stage,.pillar{transform-style:preserve-3d;transition:transform .55s var(--motion-ease),box-shadow .55s,border-color .4s}.case-card:hover,.ins-card:hover,.qfp-card:hover{transform:translateY(-9px) rotateX(1.5deg);box-shadow:0 25px 65px rgba(0,25,70,.13)}.case-media,.ins-media,.about-media{overflow:hidden}.case-media img,.ins-media img,.about-media>img{transition:transform 1.1s var(--motion-ease),filter .7s}.case-card:hover .case-media img,.ins-card:hover .ins-media img,.about-media:hover>img{transform:scale(1.075);filter:saturate(1.12)}.case-client,.ins-tag{backdrop-filter:blur(12px)}
+/* About image gets a subtle scanning highlight */
+.about-media{position:relative}.about-media:after{content:"";position:absolute;z-index:1;inset:-120% auto -120% -45%;width:28%;transform:rotate(22deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.26),transparent);animation:imageSweep 8s ease-in-out infinite;pointer-events:none}.about-chip{animation:chipFloat 5.5s ease-in-out infinite}
+/* Typography: each section gets a different entrance rhythm */
+.overline{animation:overlineTrack .8s var(--motion-ease) both}.sec-title em{display:inline-block;transform-origin:50% 80%;transition:transform .55s var(--motion-ease),text-shadow .55s}.sec-title:hover em{transform:translateY(-4px) rotate(-1.2deg);text-shadow:0 8px 24px rgba(0,127,236,.16)}.sec-sub{transition:letter-spacing .5s}.head-row:hover .sec-sub{letter-spacing:.006em}
+/* methodology cards pulse in sequence */
+.qfm-stage.visible .qfm-icon{animation:iconPop .8s var(--motion-ease) both}.qfm-stage:nth-child(2) .qfm-icon{animation-delay:.12s}.qfm-stage:nth-child(3) .qfm-icon{animation-delay:.24s}.qfm-stage:nth-child(4) .qfm-icon{animation-delay:.36s}.qfm-stage:nth-child(5) .qfm-icon{animation-delay:.48s}.qfm-card{transition:transform .5s var(--motion-ease),box-shadow .5s}.qfm-stage:hover .qfm-card{transform:translateY(-7px);box-shadow:0 18px 38px rgba(0,0,0,.2)}
+.qfp-card:hover .qfp-icon{animation:iconDance .65s var(--motion-ease)}.qfp-icon svg{transition:transform .5s}.qfp-card:hover .qfp-icon svg{transform:rotate(-9deg) scale(1.08)}
+/* Footer and CTA */
+.cta{isolation:isolate}.cta-title em{display:inline-block;animation:softWave 5s ease-in-out infinite}.cta-actions .btn{animation:buttonLevitate 4s ease-in-out infinite}.footer-intro-link span{display:inline-block;transition:transform .35s}.footer-intro-link:hover span{transform:translate(5px,-5px) rotate(12deg)}
+/* Buttons, links, and focus states */
+.btn,.nav-cta,.svc-link,.ins-link,.footer a{transition:transform .35s var(--motion-ease),color .3s,background .3s,box-shadow .35s}.svc-link span{display:inline-block;transition:transform .35s}.svc-link:hover span{transform:translateX(7px)}a:focus-visible,button:focus-visible{outline:3px solid rgba(0,127,236,.7);outline-offset:4px}
+/* reveal classes are animated only after observer adds .visible */
+.reveal{transition:opacity .85s var(--motion-ease),transform .85s var(--motion-ease),filter .85s var(--motion-ease)}.reveal.visible{filter:none}
+@keyframes heroLineIn{from{opacity:0;transform:translate3d(0,42px,-35px) rotateX(-12deg);filter:blur(9px)}to{opacity:1;transform:translate3d(0,0,0) rotateX(0);filter:blur(0)}}@keyframes riseIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}@keyframes wordFlip{0%{opacity:0;transform:translateY(16px) rotateX(-65deg);filter:blur(5px)}100%{opacity:1;transform:translateY(0) rotateX(0);filter:blur(0)}}@keyframes tagDrift{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}@keyframes dotPing{0%{box-shadow:0 0 0 0 rgba(74,190,255,.55)}75%,100%{box-shadow:0 0 0 11px rgba(74,190,255,0)}}@keyframes scrollBob{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}@keyframes orbitSpin{to{transform:rotate(360deg)}}@keyframes chipFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-9px) rotate(-1deg)}}@keyframes imageSweep{0%,25%{left:-45%;opacity:0}38%{opacity:1}65%,100%{left:130%;opacity:0}}@keyframes iconPop{0%{transform:scale(.65) rotate(-25deg);opacity:.2}70%{transform:scale(1.12) rotate(7deg)}100%{transform:scale(1) rotate(0);opacity:1}}@keyframes iconDance{0%,100%{transform:rotate(0) translateY(0)}25%{transform:rotate(-12deg) translateY(-5px)}55%{transform:rotate(10deg) translateY(-7px)}80%{transform:rotate(-5deg) translateY(-2px)}}@keyframes softWave{0%,100%{transform:translateY(0) rotate(0)}25%{transform:translateY(-3px) rotate(-1deg)}50%{transform:translateY(2px) rotate(1deg)}75%{transform:translateY(-2px) rotate(-.5deg)}}@keyframes buttonLevitate{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@media(max-width:900px){.qf-orbit{right:4%;top:10%;opacity:.55}.svc-visual{height:100px}.svc-card:hover,.case-card:hover,.ins-card:hover,.qfp-card:hover{transform:translateY(-4px)}}
+@media(max-width:600px){.qf-orbit{width:100px;right:2%;top:7%;opacity:.35}.svc-visual{height:92px}.hero-title .line-inner{animation-duration:.8s}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.qf-orbit,.hero-tag,.hero-tag-dot,.hero-title .line-inner,.hero-sub,.hero-scroll,.hero-meta,.about-chip,.about-media:after,.cta-title em,.cta-actions .btn{animation:none!important}.svc-card,.case-card,.ins-card,.qfp-card,.qfm-card,.svc-visual img,.case-media img,.ins-media img,.about-media>img{transition:none!important}.reveal{transition:none!important}}
+
+</style>
 </head>
 <body>
 <div class="preloader" id="preloader">
@@ -4899,8 +4932,6 @@ html,body{max-width:100%;overflow-x:clip!important}
 >
     <source src="./videos/hero.mp4" type="video/mp4">
 </video>
-<source src="videos/hero.mp4" type="video/mp4">
-</video>
 <img class="hero-poster" id="heroPoster" hidden src="assets/hero-poster.svg" alt="Abstract architectural technology backdrop">
 <div class="hero-overlay">
 </div>
@@ -4929,6 +4960,7 @@ html,body{max-width:100%;overflow-x:clip!important}
 <a href="#services" class="btn btn-ghost-light">Explore Services</a>
 </div>
 </div>
+<div class="qf-orbit" aria-hidden="true"><i></i></div>
 <a class="hero-scroll" href="#trusted">Scroll Down</a>
 <div class="hero-meta">
 <span>Custom Software</span>
@@ -5354,5 +5386,43 @@ window.addEventListener('resize',()=>{if(window.innerWidth>900)closeMenu();});
 })();
 
 </script>
+
+<script id="quadrafroyn-signature-interactions">
+(()=>{
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const serviceImages=[
+    'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=82',
+    'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=82',
+    'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=82',
+    'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=82',
+    'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=82',
+    'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=900&q=82'
+  ];
+  document.querySelectorAll('.svc-card').forEach((card,i)=>{
+    if(!card.querySelector('.svc-visual')){
+      const visual=document.createElement('div');visual.className='svc-visual';visual.setAttribute('aria-hidden','true');
+      const img=document.createElement('img');img.src=serviceImages[i%serviceImages.length];img.alt='';img.loading='lazy';img.decoding='async';visual.append(img);
+      const top=card.querySelector('.svc-top');if(top)top.insertAdjacentElement('afterend',visual);else card.prepend(visual);
+    }
+    card.style.setProperty('--card-index',i);
+  });
+  // Lightweight pointer tilt, enabled only on fine pointers and without reduced motion.
+  if(!reduce&&matchMedia('(pointer:fine)').matches){
+    document.querySelectorAll('.svc-card,.case-card,.ins-card,.qfp-card').forEach(card=>{
+      card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(900px) translateY(-5px) rotateX(${-y*3.5}deg) rotateY(${x*4}deg)`;});
+      card.addEventListener('pointerleave',()=>{card.style.transform='';});
+    });
+  }
+  // Reveal section headings with a small per-word stagger while preserving their markup.
+  if(!reduce){document.querySelectorAll('.sec-title,.cta-title').forEach((heading,i)=>{heading.classList.add('qf-heading-motion');heading.style.setProperty('--heading-order',i);});}
+  // Add subtle scroll progress to the page without a heavy animation library.
+  const progress=document.createElement('div');progress.className='qf-scroll-progress';progress.setAttribute('aria-hidden','true');
+  Object.assign(progress.style,{position:'fixed',top:'0',left:'0',height:'2px',width:'0%',zIndex:'99999',pointerEvents:'none',background:'linear-gradient(90deg,#007fec,#7cc9ff,#3dae2b)',boxShadow:'0 0 12px rgba(0,127,236,.5)'});document.body.append(progress);
+  let ticking=false;const update=()=>{const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%';ticking=false;};window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});update();
+  // Gentle magnetic response for primary calls to action.
+  if(!reduce&&matchMedia('(pointer:fine)').matches){document.querySelectorAll('.btn-primary,.nav-cta').forEach(btn=>{btn.addEventListener('pointermove',e=>{const r=btn.getBoundingClientRect();btn.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.035}px,${(e.clientY-r.top-r.height/2)*.08-2}px)`;});btn.addEventListener('pointerleave',()=>btn.style.transform='');});}
+})();
+</script>
+
 </body>
 </html>
